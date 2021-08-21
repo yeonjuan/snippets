@@ -4,6 +4,7 @@
 
 - [debounce](./javascript/debounce.md)
 - [throttle](./javascript/throttle.md)
+- [load image using Promise](./javascript/load-image-promise.md)
 
 ## React
 

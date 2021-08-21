@@ -16,7 +16,7 @@ const loadImage = (url) =>
 
 ### TypeScript
 
-```js
+```ts
 const loadImage = (url: string): Promise<HTMLImageElement> =>
   new Promise((resolve, reject) => {
     const image = new Image();

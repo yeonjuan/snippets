@@ -1,14 +1,18 @@
 # Throttle
 
+## Code
+
+### JavaScript
+
 ```js
 function throttle(fn, delay) {
   let timer;
-  return function(){
+  return function () {
     if (timer) return;
-      timer = setTimeout(( )=> {
-        timer = null;
-        fn.apply(this,arguments)
-      }, delay)
-  }
+    timer = setTimeout(() => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, delay);
+  };
 }
 ```

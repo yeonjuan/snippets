@@ -1,5 +1,9 @@
 # Debounce
 
+## Code
+
+### JavaScript
+
 ```js
 function debounce(fn, delay) {
   let timer;
@@ -7,7 +11,7 @@ function debounce(fn, delay) {
     clearTimeout(timer);
     timer = setTimeout(() => {
       fn.apply(this, arguments);
-    },delay);
-  }
+    }, delay);
+  };
 }
 ```

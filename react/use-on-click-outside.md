@@ -1,6 +1,8 @@
 # useOnClickOutside
 
-## JavaScript
+## Code
+
+### JavaScript
 
 ```js
 import { useEffect } from "react";
@@ -23,7 +25,7 @@ const useOnClickOutside = (ref, handler) => {
 };
 ```
 
-## TypeScript
+### TypeScript
 
 ```ts
 import { RefObject, useEffect } from "react";

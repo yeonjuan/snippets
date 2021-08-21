@@ -1,0 +1,22 @@
+{
+  "name": "snippets",
+  "version": "1.0.0",
+  "description": "## JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeonjuan/snippets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeonjuan/snippets/issues"
+  },
+  "homepage": "https://github.com/yeonjuan/snippets#readme",
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}

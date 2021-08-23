@@ -2,7 +2,7 @@
 
 ## JavaScript
 
-- [debounce](./javascript/debounce.md)
+- [debounce](./javascript/debounce/README.md)
 - [throttle](./javascript/throttle.md)
 - [pipe](./javascript/pipe.md)
 - [pipe promises](./javascript/pipe-promises.md)

@@ -1,10 +1,3 @@
-# Debounce
-
-## Code
-
-### JavaScript
-
-```js
 function debounce(fn, delay) {
   let timer;
   return function () {
@@ -14,4 +7,5 @@ function debounce(fn, delay) {
     }, delay);
   };
 }
-```
+
+module.exports = debounce; // ignore build

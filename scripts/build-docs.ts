@@ -27,6 +27,15 @@ function getExt(path: string) {
   return parse(path).ext.slice(1);
 }
 
+function buildSourceReadme(codePath: string, readmePath: string) {
+  const code = readCode(codePath);
+  const readme = readFile(readmePath);
+  return replacer()
+    .content(readme)
+    .replace("code", () => `\`\`\`${getExt(codePath)}\n${code}\n\`\`\``)
+    .build();
+}
+
 function buildDocs(sources: Source[]) {
   const cwd = process.cwd();
   const categoryResolver = (fileName: string) => join(cwd, fileName);
@@ -49,15 +58,9 @@ function buildDocs(sources: Source[]) {
       const readmeFilePath = filePaths.filter((filePath) =>
         /README.md/g.test(filePath)
       )[0];
-      const code = readCode(codeFilePath);
-      const readme = readFile(readmeFilePath);
 
-      const output = replacer()
-        .content(readme)
-        .replace("code", () => `\`\`\`${getExt(codeFilePath)}\n${code}\n\`\`\``)
-        .build();
-
-      writeFileSync(readmeFilePath, output);
+      const readme = buildSourceReadme(codeFilePath, readmeFilePath);
+      writeFileSync(readmeFilePath, readme);
     });
   });
 }

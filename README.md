@@ -7,6 +7,7 @@
 - [pipe](./javascript/pipe.md)
 - [pipe promises](./javascript/pipe-promises.md)
 - [load image using Promise](./javascript/load-image-promise.md)
+- [rgbToHex](./source/rgbToHex/README.md)
 
 ## React
 

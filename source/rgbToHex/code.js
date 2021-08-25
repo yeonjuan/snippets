@@ -1,10 +1,8 @@
-function toHex(value) {
-  const hex = value.toString(16);
-  return hex.length === 1 ? `0${hex}` : hex;
-}
-
 function rgbToHex(r, g, b) {
-  return `#${[r, g, b].map(toHex).join("")}`;
+  return `#${[r, g, b]
+    .map((v) => v.toString(16))
+    .map((hex) => (hex.length === 1 ? `0${hex}` : hex))
+    .join("")}`;
 }
 
 module.exports = rgbToHex; // ignore build

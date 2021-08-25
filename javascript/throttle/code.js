@@ -1,10 +1,3 @@
-# Throttle
-
-## Code
-
-### JavaScript
-
-```js
 function throttle(fn, delay) {
   let timer;
   return function () {
@@ -15,4 +8,5 @@ function throttle(fn, delay) {
     }, delay);
   };
 }
-```
+
+module.exports = throttle; // ignore build

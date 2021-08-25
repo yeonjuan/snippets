@@ -67,6 +67,6 @@ function buildDocs(sources: Source[]) {
 
 buildDocs([
   {
-    dir: "javascript",
+    dir: "source",
   },
 ]);

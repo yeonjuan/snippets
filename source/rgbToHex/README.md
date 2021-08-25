@@ -7,15 +7,11 @@ Convert RGB color value to HEX.
 <!-- start: code -->
 
 ```js
-function throttle(fn, delay) {
-  let timer;
-  return function () {
-    if (timer) return;
-    timer = setTimeout(() => {
-      timer = null;
-      fn.apply(this, arguments);
-    }, delay);
-  };
+function rgbToHex(r, g, b) {
+  return `#${[r, g, b]
+    .map((v) => v.toString(16))
+    .map((hex) => (hex.length === 1 ? `0${hex}` : hex))
+    .join("")}`;
 }
 ```
 

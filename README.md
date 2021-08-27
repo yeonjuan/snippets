@@ -8,7 +8,7 @@
 - [pipe (Promise)](./source/pipe-promise/README.md)
 - [loadImage (Promise)](./source/loadImage-promise/README.md)
 - [rgbToHex](./source/rgbToHex/README.md)
-- [hexToRgb](TODO)
+- [hexToRgb](./source/hexToRgb/README.md)
 
 ## React
 

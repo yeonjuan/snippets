@@ -1,6 +1,6 @@
-# rgbToHex
+# hexToRgb
 
-Convert RGB color value to HEX.
+Convert HEX color value to RGB.
 
 ## JavaScript
 

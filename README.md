@@ -6,7 +6,7 @@
 - [throttle](./source/throttle/README.md)
 - [pipe](./source/pipe/README.md)
 - [pipe (Promise)](./source/pipe-promise/README.md)
-- [loadImage (Promise)](./javascript/load-image-promise.md)
+- [loadImage (Promise)](./source/loadImage-promise/README.md)
 - [rgbToHex](./source/rgbToHex/README.md)
 - [hexToRgb](TODO)
 

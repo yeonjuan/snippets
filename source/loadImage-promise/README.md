@@ -1,8 +1,10 @@
-# Load Image using Promise
+# loadImage (Promise)
 
-## Code
+Loading image with Promise.
 
-### JavaScript
+## JavaScript
+
+<!-- start: code-js -->
 
 ```js
 const loadImage = (url) =>
@@ -14,11 +16,15 @@ const loadImage = (url) =>
   });
 ```
 
-### TypeScript
+<!-- end: code-js -->
+
+## TypeScript
+
+<!-- start: code-ts -->
 
 ```ts
 const loadImage = (url: string): Promise<HTMLImageElement> =>
-  new Promise((resolve, reject) => {
+  new Promise<HTMLImageElement>((resolve, reject) => {
     const image = new Image();
     image.onload = () => resolve(image);
     image.onerror = (error) => reject(error);
@@ -26,8 +32,10 @@ const loadImage = (url: string): Promise<HTMLImageElement> =>
   });
 ```
 
+<!-- end: code-ts -->
+
 ## Usage
 
 ```js
-const image = await loadImage("/foo/bar.png");
+const img = await loadImage("/path/of/image.png");
 ```

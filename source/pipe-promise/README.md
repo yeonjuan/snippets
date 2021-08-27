@@ -4,17 +4,20 @@ It's a pipe function supports promise-returning & async function.
 
 ## Code
 
-<!-- start: code.js -->
+<!-- start: code-js -->
 
 ```js
 const promisePipe = (...operations) => {
   return (input) => {
-    operations.reduce((pValue, op) => pValue.then(op), Promise.resolve(input));
+    return operations.reduce(
+      (pValue, op) => pValue.then(op),
+      Promise.resolve(input)
+    );
   };
 };
 ```
 
-<!-- end: code.js -->
+<!-- end: code-js -->
 
 ## Usage
 

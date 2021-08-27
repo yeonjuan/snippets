@@ -4,7 +4,7 @@ It takes `operations`(sequence of functions) which all takes just one argument. 
 
 ## Code
 
-<!-- start: code.js -->
+<!-- start: code-js -->
 
 ```js
 const pipe = (...operations) => {
@@ -14,7 +14,7 @@ const pipe = (...operations) => {
 };
 ```
 
-<!-- end: code.js -->
+<!-- end: code-js -->
 
 ## Usage
 

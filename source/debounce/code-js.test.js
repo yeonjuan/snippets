@@ -1,19 +1,19 @@
-const throttle = require("./code");
+const debounce = require("./code-js");
 
 jest.useFakeTimers();
 
-describe("throttle", () => {
+describe("debounce", () => {
   let func;
-  let throttledFunc;
+  let debouncedFunc;
 
   beforeEach(() => {
     func = jest.fn();
-    throttledFunc = throttle(func, 1000);
+    debouncedFunc = debounce(func, 1000);
   });
 
   test("execute just once", () => {
     for (let i = 0; i < 100; i++) {
-      throttledFunc();
+      debouncedFunc();
     }
     jest.runAllTimers();
     expect(func).toBeCalledTimes(1);

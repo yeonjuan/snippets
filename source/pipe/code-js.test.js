@@ -1,4 +1,4 @@
-const pipe = require("./code");
+const pipe = require("./code-js");
 
 describe("pipe", () => {
   test("pipe one", () => {

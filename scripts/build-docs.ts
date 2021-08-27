@@ -14,8 +14,8 @@ type Source = {
 };
 
 const CODE_FILE_NAME = {
-  JS: "code.js",
-  TS: "code.ts",
+  JS: "code-js.js",
+  TS: "code-ts.ts",
 };
 
 const IGNORE_COMMENT = "ignore build";
@@ -52,6 +52,10 @@ function toCodeBlock(code: string, ext: string) {
   return `\`\`\`${ext}\n${code}\n\`\`\``;
 }
 
+function removeExt(filename: string) {
+  return filename.replace(parse(filename).ext, "");
+}
+
 function buildSourceReadme(directory: string) {
   const resolve = (filename: string) => join(directory, filename);
   const jsPath = resolve(CODE_FILE_NAME.JS);
@@ -63,11 +67,11 @@ function buildSourceReadme(directory: string) {
   let mdReplacer = replacer().content(readme);
 
   jsCode &&
-    (mdReplacer = mdReplacer.replace(CODE_FILE_NAME.JS, () =>
+    (mdReplacer = mdReplacer.replace(removeExt(CODE_FILE_NAME.JS), () =>
       toCodeBlock(jsCode, getExt(jsPath))
     ));
   tsCode &&
-    (mdReplacer = mdReplacer.replace(CODE_FILE_NAME.TS, () =>
+    (mdReplacer = mdReplacer.replace(removeExt(CODE_FILE_NAME.TS), () =>
       toCodeBlock(tsCode, getExt(tsPath))
     ));
 

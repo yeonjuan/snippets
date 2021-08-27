@@ -1,4 +1,4 @@
-const rgbToHex = require("./code");
+const rgbToHex = require("./code-js");
 
 jest.useFakeTimers();
 

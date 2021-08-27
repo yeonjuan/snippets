@@ -4,7 +4,7 @@ Returns a function that can only call the given `fn` once per every `delay` in m
 
 ## Code
 
-<!-- start: code.js -->
+<!-- start: code-js -->
 
 ```js
 function throttle(fn, delay) {
@@ -19,7 +19,7 @@ function throttle(fn, delay) {
 }
 ```
 
-<!-- end: code.js -->
+<!-- end: code-js -->
 
 ## Usage
 

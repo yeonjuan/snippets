@@ -1,4 +1,4 @@
-const promisePipe = require("./code");
+const promisePipe = require("./code-js");
 
 describe("promisePipe", () => {
   test("promisePipe one", async () => {

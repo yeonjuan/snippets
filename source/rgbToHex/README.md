@@ -2,9 +2,9 @@
 
 Convert RGB color value to HEX.
 
-## Code
+## JavaScript
 
-<!-- start: code.js -->
+<!-- start: code-js -->
 
 ```js
 function rgbToHex(r, g, b) {
@@ -15,7 +15,22 @@ function rgbToHex(r, g, b) {
 }
 ```
 
-<!-- end: code.js -->
+<!-- end: code-js -->
+
+## TypeScript
+
+<!-- start: code-ts -->
+
+```ts
+function rgbToHex(r: number, g: number, b: number): string {
+  return `#${[r, g, b]
+    .map((v) => v.toString(16))
+    .map((hex) => (hex.length === 1 ? `0${hex}` : hex))
+    .join("")}`;
+}
+```
+
+<!-- end: code-ts -->
 
 ## Usage
 

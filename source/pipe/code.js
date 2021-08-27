@@ -1,6 +1,6 @@
 const pipe = (...operations) => {
   return (input) => {
-    return operations.reduce((value, operate) => operate(value), input);
+    return operations.reduce((value, op) => op(value), input);
   };
 };
 

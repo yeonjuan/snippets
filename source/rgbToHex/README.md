@@ -4,7 +4,7 @@ Convert RGB color value to HEX.
 
 ## Code
 
-<!-- start: code -->
+<!-- start: code.js -->
 
 ```js
 function rgbToHex(r, g, b) {
@@ -15,7 +15,7 @@ function rgbToHex(r, g, b) {
 }
 ```
 
-<!-- end: code -->
+<!-- end: code.js -->
 
 ## Usage
 

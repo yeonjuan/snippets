@@ -4,7 +4,7 @@ Returns a function that delays the given `fn` until after the stated `delay` tim
 
 ## Code
 
-<!-- start: code -->
+<!-- start: code.js -->
 
 ```js
 function debounce(fn, delay) {
@@ -18,7 +18,7 @@ function debounce(fn, delay) {
 }
 ```
 
-<!-- end: code -->
+<!-- end: code.js -->
 
 ## Usage
 
@@ -26,6 +26,5 @@ function debounce(fn, delay) {
 const doSomething = debounce(() => {
   /* */
 }, 100);
-
 window.addEventListener("scroll", doSomething);
 ```

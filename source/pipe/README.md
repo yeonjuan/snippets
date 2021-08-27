@@ -4,25 +4,23 @@ It takes `operations`(sequence of functions) which all takes just one argument. 
 
 ## Code
 
-<!-- start: code -->
+<!-- start: code.js -->
 
 ```js
 const pipe = (...operations) => {
   return (input) => {
-    return operations.reduce((value, operate) => operate(value), input);
+    return operations.reduce((value, op) => op(value), input);
   };
 };
 ```
 
-<!-- end: code -->
+<!-- end: code.js -->
 
 ## Usage
 
 ```js
 const prefixHello = (str) => "Hello " + str;
 const postfixWorld = (str) => str + " World";
-
 const helloWorld = pipe(prefixHello, postfixWorld);
-
 helloWorld("My"); // 'Hello My World
 ```

@@ -2,9 +2,9 @@
 
 Returns a function that delays the given `fn` until after the stated `delay` time in milliseconds have passed since the last time this debounced function was called.
 
-## Code
+## JavaScript
 
-<!-- start: code.js -->
+<!-- start: code-js -->
 
 ```js
 function debounce(fn, delay) {
@@ -18,7 +18,25 @@ function debounce(fn, delay) {
 }
 ```
 
-<!-- end: code.js -->
+<!-- end: code-js -->
+
+## TypeScript
+
+<!-- start: code-ts -->
+
+```ts
+function debounce<Fn extends (...args: any[]) => any>(fn: Fn, delay: number) {
+  let timer: ReturnType<typeof setTimeout>;
+  return function (this: any, ...args: Parameters<Fn>) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      fn.apply(this, args);
+    }, delay);
+  };
+}
+```
+
+<!-- end: code-ts -->
 
 ## Usage
 

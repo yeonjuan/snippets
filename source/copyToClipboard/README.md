@@ -1,4 +1,4 @@
-# Debounce
+# copyToClipboard
 
 Copy the givin `text` to clipboard.
 

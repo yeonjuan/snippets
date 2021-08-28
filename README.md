@@ -10,6 +10,10 @@
 - [rgbToHex](./source/rgbToHex/README.md)
 - [hexToRgb](./source/hexToRgb/README.md)
 
+## Browser
+
+- [copyToClipboard](./source/copyToClipboard/README.md)
+
 ## React
 
 - [useOnClickOutside](./react/use-on-click-outside.md)

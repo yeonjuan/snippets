@@ -14,6 +14,10 @@
 
 - [copyToClipboard](./source/copyToClipboard/README.md)
 
+## Canvas
+
+- [drawRoundedRect](./source/drawRoundedRect-canvas/README.md)
+
 ## React
 
 - [useOnClickOutside](./react/use-on-click-outside.md)

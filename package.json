@@ -22,8 +22,12 @@
   "homepage": "https://github.com/yeonjuan/snippets#readme",
   "devDependencies": {
     "@types/jest": "^27.0.1",
+    "@types/jest-image-snapshot": "^4.3.1",
     "@types/node": "^16.7.1",
+    "canvas": "^2.8.0",
+    "data-uri-to-buffer": "^3.0.1",
     "jest": "^27.0.6",
+    "jest-image-snapshot": "^4.5.1",
     "md-replacer": "0.0.4",
     "prettier": "^2.3.2",
     "ts-jest": "^27.0.5",

@@ -61,3 +61,14 @@ const canvas = createCanvas(size, size);
 const ctx = canvas.getContext("2d");
 drawRoundedRect(ctx, x, y, width, height, radius, "#ff0000");
 ```
+
+## Example
+
+- x: 0
+- y: 0
+- width: 100
+- height: 100
+- fillStyle: #fca103
+  | radius: 50 | radius 20 | radius 0 |
+  | --- | --- | --- |
+  | ![](./__image_snapshots__/code-js-test-js-draw-rounded-rect-radius-50-1-snap.png) | ![](./__image_snapshots__/code-js-test-js-draw-rounded-rect-radius-20-1-snap.png) | ![](./__image_snapshots__/code-js-test-js-draw-rounded-rect-radius-0-1-snap.png) |

@@ -9,6 +9,7 @@
 - [loadImage (Promise)](./source/loadImage-promise/README.md)
 - [rgbToHex](./source/rgbToHex/README.md)
 - [hexToRgb](./source/hexToRgb/README.md)
+- [degreeToRadian](./source/degreeToRadian/README.md)
 
 ## Browser
 
